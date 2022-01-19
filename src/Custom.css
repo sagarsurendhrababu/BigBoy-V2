@@ -1,0 +1,59 @@
+.searchIcon{width: 30px; height: 30px; border-radius: 50%;}
+.navLink>li>a{color: #fff;}
+.Banner{height:100vh;}
+.BannerHyper{bottom:-90px; height: 182px;}
+.BannerHyper>div:nth-child(1){border-radius: 2rem 0 0 2rem;}
+.BannerHyper>div:nth-child(2){border-radius: 0 2rem 2rem 0;}
+.Course{background-color:#E7E6E6;}
+.CourseDetails{display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(auto,1fr); grid-gap: 1.5rem;}
+.CourseDetails>li{height: 450px; overflow: hidden; cursor: pointer; background-color: var(--c7); border-radius: 1.5rem; transition: all 500ms ease-in-out;}
+.CourseDetails >li:hover{transform: scale(1.05);}
+.courseDList label{background-color: var(--c5); margin-bottom:.2rem; padding: .2rem .5rem;}
+.knowMoreBtn{visibility:hidden; opacity: 0; transition: all 1s ease;}
+.CourseDetails >li:hover .knowMoreBtn{visibility:visible; opacity: 1; }
+.CourseDetails >li:hover img{height: 20%;}
+.CourseDetails>li:nth-child(odd){background-color: #5E4ED1;}
+.CourseDetails>li:nth-child(even){background-color: #271E73;}
+.CourseDetails>li>img{border-radius:1.5rem; height: 60%; object-fit: cover; width: 100%; transition: all 400ms ease-in-out;}
+.star {color:#FFCE31;}
+.TitleHead{position: relative; display: flex; justify-content: center;}
+.TitleHead::before{content: ''; width: 100px; height: 3px; background-color:#FD8BFF; position: absolute; bottom: -15px;}
+.welcome{background-color:#5E4ED1;}
+.stundGame{background-image: url(../public/portfolio.jpg); background-size: cover; height: 70vh;}
+.Recruite{background-color: #1D2A73;}
+.Recruite ul>li{margin:2%;}
+.whyChoose{background-color: #F2F2F2;}
+.whyChoose ul>li div{margin: 1rem 0;}
+.whyChoose ul>li div>h5{font-family: var(--f3); font-weight: 500; }
+.testimo{overflow:hidden;}
+.testimoCanvas{display: flex;}
+.testimoCanvas>li{margin:0 1rem;}
+.subFooter{background-color:#0E163F ;}
+.footer{color: var(--c7);}
+.footerNav div li{margin: .5rem 0; border-bottom: 1px dotted #333; padding-bottom: 2%;}
+.quickForm{background-color: rgba(0,0,0,.7); width: 100%; height: 100vh; position:fixed; top: 0; bottom: 0; display:none; z-index: 9;}
+.quickForm form{background-color: #6A5BDC;}
+.quickForm form input, .quickForm form select{margin-bottom: 1rem; border: none; background-color: #fff; }
+.quickForm form button{margin-top: 1rem;}
+
+.quickForm1{width: 100%; height: 100%; }
+.quickForm1 form{background-color: #ffff;}
+.quickForm1 form input, .quickForm1 form select{margin-bottom: 1rem; border: none; background-color: rgb(207, 207, 207); }
+.quickForm1 form button{margin-top: 1rem;}
+
+.formCloseBtn{width: 40px; cursor: pointer; font-size: 1.2rem; color:var(--c7); height: 50px; border-radius: 0 .5rem .5rem 0; background-color:var(--c5); position: absolute; right: -40px; top: 5%;}
+.formCloseBtn:hover{background-color: var(--c4); color: var(--c7);}
+.breadcrumb{height: 150px; background-image: url(../public/breadcums.jpg); background-position: center center; }
+.map img{width: 100%; height: 100%; object-fit: cover;}
+.socialIcon a{font-size: 1.5rem; margin-right: .5rem;}
+
+.Megagallery{  display: grid; grid-gap: 10px; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); grid-auto-rows: 120px;  grid-auto-flow: dense; }
+.Megagallery>li{width: 100%;}
+.Megagallery img{width: 100%; height: 100%;}
+.horizontal {grid-column: span 2;}
+.vertical {grid-row: span 2;}
+.big {grid-column: span 2;grid-row: span 2;}
+
+.sticky {position: sticky; top: 0; z-index: 0;}
+.whyWe img{width: 100%; height:auto;}
+.bigClod{bottom:-4rem; width: 650px!important; z-index:7;}
