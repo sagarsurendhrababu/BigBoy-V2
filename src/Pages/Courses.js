@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext} from 'react';
+import { Context } from '../Provider';
 import NavBar from '../Component/NavBar';
 import BreadCrubs from '../Component/BreadCrubs';
 import Footer from '../Component/Footer';
@@ -8,13 +9,14 @@ import Testimonial from '../Component/Testimonial';
 
 
 function Courses() {
+    const [state, dispatch] = useContext(Context);
     return (
         <div>
            <NavBar/>
            <BreadCrubs title="Courses"/>
            <Course noTitle={true}/>
            <Testimonial/>
-           <QuickForm/>
+           { state.quickform ? <QuickForm/>:'' }
            <Footer/>            
         </div>
     )

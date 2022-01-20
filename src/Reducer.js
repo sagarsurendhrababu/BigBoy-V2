@@ -1,14 +1,14 @@
 const Reducer = (state,action)=>{
    switch (action) {
-       case 'up':           
+       case 'popupForm':           
         return {
             ...state,
-            value1: state.value1+10
+            quickform: true
         } 
-        case 'up2':           
+        case 'popupFormClose':           
         return {
             ...state,
-            value2: state.value2+10
+            quickform: false
         }           
        default:
           return state

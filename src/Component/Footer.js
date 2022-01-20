@@ -1,20 +1,8 @@
-import React,{useEffect} from 'react';
+import React, { useContext} from 'react';
+import { Context } from '../Provider';
 
-
-function Footer() {
-    useEffect(() => {
-        let popupForm = document.querySelectorAll(".popupForm");
-        let quickForm = document.querySelector(".quickForm");
-
-        popupForm.forEach(el=>{
-            el.addEventListener("click", ()=>{
-                if(quickForm.style.display="none"){
-                    quickForm.style.display="block";
-                    quickForm.style.display="flex";
-                }                
-            })
-        })
-    }, []);    
+function Footer() {  
+    const [state, dispatch] = useContext(Context); 
     return (
         <div>
             <div className="col12 sm4 md8 subFooter flexCC"> 
@@ -24,8 +12,8 @@ function Footer() {
                         <h6 className='c7t mf f1'>Get the Curriculum, Fee Details and More</h6>
                     </div>
                     <div className="col12 flexRC">
-                        <button className='btn3 br0 bn mr popupForm'><i class="fa fa-address-book mr" aria-hidden="true"></i><span> ENQUIRE NOW</span></button>
-                        <button className='btn3 br0 bn c4b c7t popupForm'><i class="fa fa-envelope mr" aria-hidden="true"></i><span> EMAIL REQUEST</span></button>
+                        <button className='btn3 br0 bn mr' onClick={()=>{dispatch('popupForm')}}><i class="fa fa-address-book mr" aria-hidden="true"></i><span> ENQUIRE NOW</span></button>
+                        <button className='btn3 br0 bn c4b c7t' onClick={()=>{dispatch('popupForm')}}><i class="fa fa-envelope mr" aria-hidden="true"></i><span> EMAIL REQUEST</span></button>
                     </div>                
                 </div>
             </div>

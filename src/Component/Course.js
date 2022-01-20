@@ -1,20 +1,9 @@
-import React,{useEffect} from 'react'
+import React, { useContext} from 'react';
+import { Context } from '../Provider';
 
 
-function Course(props) {
-    useEffect(() => {
-        let popupForm = document.querySelectorAll(".popupForm");
-        let quickForm = document.querySelector(".quickForm");
-
-        popupForm.forEach(el=>{
-            el.addEventListener("click", ()=>{
-                if(quickForm.style.display="none"){
-                    quickForm.style.display="block";
-                    quickForm.style.display="flex";
-                }                
-            })
-        })
-    }, []);     
+function Course(props) {  
+    const [state, dispatch] = useContext(Context);    
     return (
         <div className='col12 sm4 md8 Course mh pt8 pb8 flexCC'>
             <div className="wrapper">
@@ -24,7 +13,7 @@ function Course(props) {
                         <img src="../a.jpg" alt="" />
                         <div className="col12 pa prl2 c7t flexDCC">
                             <div className="col12 flex mb mt">
-                                <h5 className='f3 mf col12'>Unity Game Developer: Junior</h5>
+                                <h5 className='f3 mf c2t col12'>Unity Game Developer: Junior</h5>
                                 {/* <div className="star col12 flexRC">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -34,7 +23,7 @@ function Course(props) {
                                     <h6 className='c7t mf ml'>4.9</h6>
                                 </div> */}
                             </div>
-                            <p className='col12'>
+                            <p className='col12 sT'>
                                 Lorem ipsum dolor sit amet conse ctetur adi pi sicing elit cons ectetur adipisicing elit.
                             </p>
                             <div className="col12 flexDC">      
@@ -45,7 +34,7 @@ function Course(props) {
                                 </div>                                                      
                                 <div className="col12 flexCC">
                                 <button className='btn0 knowMoreBtn mt c6b bn c7t mr br0'><span>Know More</span></button>
-                                <button className='btn0 knowMoreBtn mt c4b bn c7t br0 popupForm'><span>Quick Enquire</span></button>
+                                <button className='btn0 knowMoreBtn mt c4b bn c7t br0' onClick={()=>{dispatch('popupForm')}}><span>Quick Enquire</span></button>
                                 </div>
                             </div>                            
                         </div>
@@ -54,7 +43,7 @@ function Course(props) {
                         <img src="../b.jpg" alt="" />
                         <div className="col12 pa prl2 c7t flexDCC">
                             <div className="col12 flex mb mt">
-                                <h5 className='f3 mf col12'>Game Development Programmer</h5>
+                                <h5 className='f3 mf c2t col12'>Game Development Programmer</h5>
                                 {/* <div className="star col12 flexRC">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -64,7 +53,7 @@ function Course(props) {
                                     <h6 className='c7t mf ml'>4.9</h6>
                                 </div> */}
                             </div>
-                            <p className='col12'>
+                            <p className='col12 sT'>
                                 Lorem ipsum dolor sit amet conse ctetur adipi sicing elit consectetur adipisicing elit.
                             </p>
                             <div className="col12 flexDC">      
@@ -76,7 +65,7 @@ function Course(props) {
                                 </div>                                                      
                                 <div className="col12 flexCC">
                                 <button className='btn0 knowMoreBtn mt c6b bn c7t mr br0'><span>Know More</span></button>
-                                <button className='btn0 knowMoreBtn mt c4b bn c7t br0 popupForm'><span>Quick Enquire</span></button>
+                                <button className='btn0 knowMoreBtn mt c4b bn c7t br0' onClick={()=>{dispatch('popupForm')}}><span>Quick Enquire</span></button>
                                 </div>
                             </div>                            
                         </div>
@@ -85,7 +74,7 @@ function Course(props) {
                         <img src="../c.jpg" alt="" />
                         <div className="col12 pa prl2 c7t flexDCC">
                             <div className="col12 flex mb mt">
-                                <h5 className='f3 mf col12'>Unity 3D Developer</h5>
+                                <h5 className='f3 mf c2t col12'>Unity 3D Developer</h5>
                                 {/* <div className="star col12 flexRC">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -95,8 +84,8 @@ function Course(props) {
                                     <h6 className='c7t mf ml'>4.9</h6>
                                 </div> */}
                             </div>
-                            <p className='col12'>
-                                Lorem ipsum dolor sit amet conse ctetur adipi sicing elit consectetur adipisicing elit.
+                            <p className='col12 sm4 md8 sT'>
+                                Lorem ipsum dolor sit amet conse ctetur adipi sicing elit cons ectetur adipisicing elit.
                             </p>
                             <div className="col12 flexDC">      
                                 <div className="col12 flexDC knowMoreBtn mt courseDList">
@@ -106,7 +95,7 @@ function Course(props) {
                                 </div>                                                      
                                 <div className="col12 flexCC">
                                 <button className='btn0 knowMoreBtn mt c6b bn c7t mr br0'><span>Know More</span></button>
-                                <button className='btn0 knowMoreBtn mt c4b bn c7t br0 popupForm'><span>Quick Enquire</span></button>
+                                <button className='btn0 knowMoreBtn mt c4b bn c7t br0' onClick={()=>{dispatch('popupForm')}}><span>Quick Enquire</span></button>
                                 </div>
                             </div>                            
                         </div>

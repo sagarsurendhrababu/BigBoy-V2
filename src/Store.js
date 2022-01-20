@@ -1,5 +1,5 @@
 const Store = {
-    value1:100,
+    quickform:false,
     value2:200
 }
 

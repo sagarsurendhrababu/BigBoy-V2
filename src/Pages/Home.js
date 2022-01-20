@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, { useContext} from 'react';
+import { Context } from '../Provider';
 import NavBar from '../Component/NavBar';
 import Banner from '../Component/Banner';
 import Footer from '../Component/Footer';
@@ -10,9 +10,10 @@ import Recruite from '../Component/Recruite';
 import WhyChoose from '../Component/WhyChoose'
 import Testimonial from '../Component/Testimonial'
 import QuickForm from '../Component/QuickForm';
-import BreadCrubs from '../Component/BreadCrubs';
+
 
 function Home() {
+  const [state, dispatch] = useContext(Context);
     return (
         <div>
           <NavBar/>
@@ -23,7 +24,7 @@ function Home() {
           <Recruite/>
           <WhyChoose/>
           <Testimonial/>
-          <QuickForm/>
+          { state.quickform ? <QuickForm/>:'' }
           <Footer/>            
         </div>
     )

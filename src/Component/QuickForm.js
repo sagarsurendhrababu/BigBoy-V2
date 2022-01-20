@@ -1,14 +1,8 @@
-import React,{useEffect, useState} from 'react'
+import React,{useContext,useState} from 'react'
+import { Context } from '../Provider';
 
 function QuickForm() {
-
-    useEffect(() => {
-        let formCloseBtn = document.querySelector(".formCloseBtn");
-        let quickForm = document.querySelector(".quickForm");        
-        formCloseBtn.addEventListener("click", ()=>{
-            quickForm.style.display="none";
-        });
-    }, []);
+    const [state, dispatch] = useContext(Context);  
 
     // Validation form fields
     const [Name,setName] = useState('');
@@ -64,7 +58,7 @@ function QuickForm() {
         <div>
             <div className="quickForm flexCC" id='quick'>               
                 <form className='col6 sm4 md5 c7b pa2 br ds1 rel' onSubmit={sendFormData}>
-                    <div className="formCloseBtn flexCC">X</div>
+                    <div className="formCloseBtn flexCC" onClick={()=>{dispatch('popupFormClose')}}>X</div>
                     <h5 className='mf mb c7t'>Quick Contact Form</h5>
                     <div className="col12 flex">
                         <input type="text" placeholder='First Name' onChange={firstNameValue} className={validName && 'fieldError'} value={Name}/>
