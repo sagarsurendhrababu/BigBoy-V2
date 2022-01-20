@@ -24,15 +24,15 @@ function Course(props) {
                         <img src="../a.jpg" alt="" />
                         <div className="col12 pa prl2 c7t flexDCC">
                             <div className="col12 flex mb mt">
-                                <h5 className='f3 mf col12'>Animation</h5>
-                                <div className="star col12 flexRC">
+                                <h5 className='f3 mf col12'>Unity Game Developer: Junior</h5>
+                                {/* <div className="star col12 flexRC">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <h6 className='c7t mf ml'>4.9</h6>
-                                </div>
+                                </div> */}
                             </div>
                             <p className='col12'>
                                 Lorem ipsum dolor sit amet conse ctetur adi pi sicing elit cons ectetur adipisicing elit.
@@ -54,15 +54,15 @@ function Course(props) {
                         <img src="../b.jpg" alt="" />
                         <div className="col12 pa prl2 c7t flexDCC">
                             <div className="col12 flex mb mt">
-                                <h5 className='f3 mf col12'>Animation</h5>
-                                <div className="star col12 flexRC">
+                                <h5 className='f3 mf col12'>Game Development Programmer</h5>
+                                {/* <div className="star col12 flexRC">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <h6 className='c7t mf ml'>4.9</h6>
-                                </div>
+                                </div> */}
                             </div>
                             <p className='col12'>
                                 Lorem ipsum dolor sit amet conse ctetur adipi sicing elit consectetur adipisicing elit.
@@ -85,15 +85,15 @@ function Course(props) {
                         <img src="../c.jpg" alt="" />
                         <div className="col12 pa prl2 c7t flexDCC">
                             <div className="col12 flex mb mt">
-                                <h5 className='f3 mf col12'>Animation</h5>
-                                <div className="star col12 flexRC">
+                                <h5 className='f3 mf col12'>Unity 3D Developer</h5>
+                                {/* <div className="star col12 flexRC">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <h6 className='c7t mf ml'>4.9</h6>
-                                </div>
+                                </div> */}
                             </div>
                             <p className='col12'>
                                 Lorem ipsum dolor sit amet conse ctetur adipi sicing elit consectetur adipisicing elit.
